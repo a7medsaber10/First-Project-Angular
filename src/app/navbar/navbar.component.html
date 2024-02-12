@@ -1,0 +1,31 @@
+<nav [ngClass]="{'py-0': isScrolled}" class="navbar navbar-expand-sm fixed-top">
+    <div class="container px-5">
+        <a class="navbar-brand text-uppercase fw-bolder fs-2"  routerLink="home">start framework</a>
+        <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <i class="fa-solid fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase fw-bold mt-3 mt-md-0 px-2"  aria-current="page" routerLinkActive="active-link" routerLink="about">ABOUT</a>
+                </li>
+                <li class="nav-item text-uppercase fw-bold mt-3 mt-md-0 px-2">
+                    <a class="nav-link" routerLink="portfolio" routerLinkActive="active-link">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase fw-bold mt-3 mt-md-0 px-2" routerLink="contact"  routerLinkActive="active-link">CONTACT</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+

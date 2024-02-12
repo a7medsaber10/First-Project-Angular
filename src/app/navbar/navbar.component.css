@@ -1,0 +1,36 @@
+nav {
+    background-color: #2c3e50;
+}
+
+nav a {
+    color: white;
+    transition: ease 0.5s;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: var(--main-color);
+}
+
+.active-link {
+    color: white !important;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.543);
+}
+
+nav {
+    padding: 15px 0;
+    transition: all .4s;
+}
+
+@media screen and (max-width:576px) {
+    .navbar-brand {
+        font-size: 20px !important;
+    }
+}
